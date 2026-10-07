@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
-import { useTuckshop, type Order } from "@/lib/tuckshop";
+import { itemById, useTuckshop, type Order } from "@/lib/tuckshop";
 
 export function Header() {
   const { cartCount } = useTuckshop();
@@ -106,7 +106,7 @@ export function OrderTracker({ order }: { order: Order }) {
         <span className={`size-2 shrink-0 rounded-full bg-primary ${order.status !== "collected" ? "animate-pulse" : ""}`} />
         <p>
           <span className="font-bold">
-            {first ? `${first.qty}× ${first.id === "bunny" ? "Bunny chow" : first.id}` : "Your order"}
+            {first ? `${first.qty}× ${itemById(first.id).name}` : "Your order"}
             {order.items.length > 1 ? ` +${order.items.length - 1} more` : ""}
           </span>{" "}
           {COPY[order.status]}
