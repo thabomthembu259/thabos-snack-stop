@@ -64,7 +64,7 @@ function Home() {
         <SectionTitle right={<Link to="/specials" className="text-[11px] font-bold text-primary">Calendar →</Link>}>Daily specials</SectionTitle>
         <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-1">
           {[1, 2, 3, 4, 5].map((d) => {
-            const s = WEEKLY_SPECIALS[d];
+            const s = WEEKLY_SPECIALS[d]!;
             const isToday = d === dow;
             return isToday ? (
               <div key={d} className="w-[130px] shrink-0 -skew-x-3 bg-primary p-3 text-primary-foreground">

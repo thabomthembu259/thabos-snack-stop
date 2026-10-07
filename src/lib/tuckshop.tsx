@@ -119,7 +119,7 @@ export function TuckshopProvider({ children }: { children: ReactNode }) {
   const add = useCallback((id: string) => setCart((c) => ({ ...c, [id]: (c[id] ?? 0) + 1 })), []);
   const remove = useCallback((id: string) => setCart((c) => {
     const n = { ...c };
-    if ((n[id] ?? 0) <= 1) delete n[id]; else n[id] -= 1;
+    if ((n[id] ?? 0) <= 1) delete n[id]; else n[id] = (n[id] ?? 1) - 1;
     return n;
   }), []);
   const clear = useCallback(() => setCart({}), []);
