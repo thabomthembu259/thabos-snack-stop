@@ -1,14 +1,34 @@
-# Welcome to your Lovable project
+# Thabo's Tuckshop Online
+
+Create a web application for a school tuckshop called Thabo's Tuckshop, with orders and daily specials.
+
+
+
+Features:
+
+
+
+Customers can browse the menu and place an order
+
+Order tracking (received, preparing, ready)
+
+Calendar view of daily specials
+
+Notifications when an order is ready
+
+
+
+Design: mobile-friendly, modern interface, easy navigation, responsive layout.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4ebfffda-fe5a-454e-9a9d-de84bcd09306).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +40,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
